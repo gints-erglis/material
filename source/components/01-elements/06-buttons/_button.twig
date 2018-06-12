@@ -1,0 +1,33 @@
+{#
+/**
+ * Available variables:
+ * - button_base_class - the base class name
+ * - button_modifiers - array of modifiers to add to the base classname
+ * - button_blockname - blockname prepended to the base classname
+ * - button_attributes - array of attribute,value pairs
+ * - button_url - the url this button should point to
+ * - button_content - the content of the button (typically text)
+ * - children: Optional additional rendered elements.
+ *
+ * Available blocks:
+ * - button_content - used to replace the content of the button with something other than text
+ *   for example: to insert an icon
+ */
+#}
+
+<button class="mdc-button mdc-button--raised js-mdc-button"
+  {% if button_url %}
+    href="{{ button_url }}"
+  {% endif %}
+>
+{% block button_content %}
+  {{ button_content }}
+{% endblock %}
+</button>
+
+{#<button class="mdc-fab material-icons" aria-label="Search">#}
+  {#<span class="mdc-fab__icon">#}
+    {#search#}
+  {#</span>#}
+{#</button>#}
+{{ children }}

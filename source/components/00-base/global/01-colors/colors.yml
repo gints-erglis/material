@@ -1,0 +1,23 @@
+items:
+  - name: $color__white
+    value: white
+  - name: $color__near-white
+    value: '#f2f2f2'
+  - name: $color__gray-1
+    value: '#e5e5e5'
+  - name: $color__gray-2
+    value: '#ccc'
+  - name: $color__gray-3
+    value: '#999'
+  - name: $color__gray-3
+    value: '#666'
+  - name: $color__gray-5
+    value: '#4c4c4c'
+  - name: $color__gray-4
+    value: '#333'
+  - name: $color__black
+    value: black
+meta:
+  description: >-
+    To add to these items, use Sass variables that start with <code>$</code> in
+    <code>.//components/_patterns/00-base/global/01-colors/_color-vars.scss</code>

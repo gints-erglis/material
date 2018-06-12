@@ -1,0 +1,7 @@
+/// Link
+@import './_mixin.scss';
+
+a,
+.link {
+  @include link;
+}

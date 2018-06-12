@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Material theme.
+ */
+
+require_once('inc/preprocess.inc');
+require_once('inc/suggestions.inc');

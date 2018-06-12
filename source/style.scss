@@ -1,0 +1,26 @@
+/**
+ * Libraries:
+ */
+// @todo: normalize is disabled as long as we have material_admin as base theme
+// @import 'normalize-scss/sass/normalize';
+@import 'breakpoint-sass/stylesheets/breakpoint';
+
+/**
+ * Variables and helpers (should not render to CSS):
+ */
+@import 'config/breakpoints';
+@import 'config/colors-used';
+@import 'config/mixins';
+@import 'config/variables';
+
+/**
+ * Base and HTML element styles:
+ */
+@import 'components/00-base/**/*.scss';
+@import 'components/01-elements/**/*.scss';
+@import 'components/02-components/**/*.scss';
+@import 'components/04-pages/**/*.scss';
+
+/**
+ * Component CSS we want to include in the main stylesheet:
+ */

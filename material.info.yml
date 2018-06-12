@@ -1,0 +1,35 @@
+name: Material
+type: theme
+base theme: classy
+description: Material theme.
+package: Custom
+core: 8.x
+libraries:
+  - material/global
+
+regions:
+  header_left: 'Header left'
+  header_center: 'Header center'
+  header_right: 'Header right'
+  status: 'Status area'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'
+  footer_left: 'Footer left'
+  footer_center: 'Footer center'
+  footer_right: 'Footer right'
+regions_hidden:
+  - sidebar_first
+
+# MUST install `components` module: `drush dl components && drush en components -y`
+# For compatibility with Pattern Lab templates; this list must
+# always be the folders immediately under the `$sourceDir` patterns folder
+# `$sourceDir` = defined in `pattern-lab/config/config.yml` under `sourceDir
+# patterns folder = `$sourceDir` + `_patterns/`
+component-libraries:
+  components:
+    paths:
+      - source/components
